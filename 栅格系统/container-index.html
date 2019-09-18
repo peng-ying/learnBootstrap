@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>栅格系统</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .container{
+            height: 40px;
+            margin: 0 auto;
+            background: #5cb85c;
+        }
+
+        /*媒体查询*/
+        @media screen and (max-width: 768px) {
+            /*超小屏幕*/
+            .container{
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px){
+            /*超小屏幕*/
+            .container{
+                width:750px;
+            }
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1200px){
+            /*超小屏幕*/
+            .container{
+                width:970px;
+            }
+        }
+
+        @media screen and (min-width: 1200px){
+            /*超小屏幕*/
+            .container{
+                width:1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container"></div>
+
+<script>
+    /*window.addEventListener('load', function () {
+        //1.获取常量
+        let container = document.querySelector('.container');
+        let clicentW = 0;
+        //2.监听窗口大小变换
+        resize();
+
+        window.addEventListener('resize',resize);
+
+        function resize() {
+            //2.1获取改变后的宽度
+           clicentW = window.innerWidth;
+            console.log(clicentW);
+            //2.2判断
+            if (clicentW >= 1200) {
+                //超大屏幕
+                container.style.width = '1170px';
+            } else if (clicentW >= 992) {
+                //大屏幕
+                container.style.width = '970px';
+            } else if (clicentW >= 768) {
+                //小屏幕
+                container.style.width = '750px';
+            } else {
+                //超小屏幕
+                container.style.width = '100%';
+            }
+        }
+    })*/
+</script>
+</body>
+</html>
